@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Quản lý</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="/admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="/admin/css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="/admin/css/styleadmin.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/admin/post">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-laugh-wink"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">SB Admin <sup></sup></div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="/admin/doimatkhau">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Đổi mật khẩu</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                <a href="/admin/doimatkhau">
+                    Đổi mật khẩiu
+                </a>
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            {{!-- <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Components</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Custom Components:</h6>
+                        <a class="collapse-item" href="buttons.html">Buttons</a>
+                        <a class="collapse-item" href="cards.html">Cards</a>
+                    </div>
+                </div>
+            </li> --}}
+
+            {{!-- <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>Utilities</span>
+                </a>
+                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Custom Utilities:</h6>
+                        <a class="collapse-item" href="utilities-color.html">Colors</a>
+                        <a class="collapse-item" href="utilities-border.html">Borders</a>
+                        <a class="collapse-item" href="utilities-animation.html">Animations</a>
+                        <a class="collapse-item" href="utilities-other.html">Other</a>
+                    </div>
+                </div>
+            </li> --}}
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+{{!-- 
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Addons
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Pages</span>
+                </a>
+                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Login Screens:</h6>
+                        <a class="collapse-item" href="/admin">Login</a>
+                        <a class="collapse-item" href="register.html">Register</a>
+                        <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
+                        <div class="collapse-divider"></div>
+                        <h6 class="collapse-header">Other Pages:</h6>
+                        <a class="collapse-item" href="404.html">404 Page</a>
+                        <a class="collapse-item" href="blank.html">Blank Page</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Charts -->
+            <li class="nav-item">
+                <a class="nav-link" href="charts.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Charts</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="tables.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Tables</span></a>
+            </li>
+
+            <!-- Divider --> --}}
+            <hr class="sidebar-divider d-none d-md-block">
+
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+               
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                   
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
+                                <img class="img-profile rounded-circle"
+                                    src="/admin/img/undraw_profile.svg">
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                               
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="/admin/logout" id="btn_logout">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+{{!-- Khu vực quản lý --}}
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Bảng Điều khiển</h1>
+                    </div>
+
+                    <!-- Content Row -->
+                    <div class="row">
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                             <a href="/admin/post/Tb">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                   
+                                         <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                Bài thông báo </div>
+                                        </div>
+                                       
+                                         </div>
+                                  
+                                  
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <a href="/admin/post/Thd">
+
+                           
+                            <div class="card border-left-success shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                                Bài tin hoạt động</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800"></div>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                             </a>
+                        </div>
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <a href="/admin/post/Tdt">
+
+                            
+                            <div class="card border-left-info shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tin đào tạo
+                                            </div>
+                                          
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+
+                        <!-- Pending Requests Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <a href="/admin/post/Khdt">
+
+                            
+                            <div class="card border-left-warning shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                                Kế hoạch đào tạo</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800"></div>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <a href="/admin/post/Tn">
+
+                           
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                Bài Tốt nghiệp </div>
+                                           
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                             </a>
+                        </div>
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <a href="/admin/post/OTSC">
+                          
+                            <div class="card border-left-success shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                                Bản Tin OTSC</div>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                                  
+                            </a>
+                        </div>
+
+
+                        
+                    </div>
+
+                    <!-- Content Row -->
+             <a href="/admin/post/add" class="btn btn-primary m-4"> <i class="fas fa-plus"></i> Thêm bài viết</a>
+                    <!-- Content Row -->
+                    <div class="row">
+                        <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-2 text-gray-800">Bài viết</h1>
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Bảng dữ liệu</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>ID Bài</th>
+                                            <th>Tiêu đề</th>
+                                            <th>Tag</th>
+                                            <th>Ngày</th>
+                                            <th> Action</th>
+                                           
+                                        </tr>
+                                    </thead>
+                              
+                                    <tbody>
+                                        {{#each postsTag}}
+                                           <tr>
+                                            <td>{{_id}}</td>
+                                            <td>{{title}}</td>
+                                            <td>{{tag}}</td>
+                                            <td>{{date}}</td>
+                                            <td >
+                                                <div class="d-flex justify-content-end">
+                                                <button type="button" class="btn btn-primary btn-test" data-id="{{this._id}}" ><i class="fas fa-edit"></i></button>
+                                                <button type="button" class="btn btn-primary btn-edit" style="display: none;" data-toggle="modal" data-target=".bd-example-modal-lg" data-id="{{this._id}}" ><i class="fas fa-edit"></i></button>
+                                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal" data-id="{{this._id}}"><i class="fas fa-trash-alt"></i></button>
+                                                
+                                                </div>
+                                               
+                                            </td>
+                                        </tr> 
+                                        {{/each}}  
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>  
+                    </div>
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+
+        {{!-- MODAL EDIT --}}
+               <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="showproductModel" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                             <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Chỉnh Sửa</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+
+                            
+                     <form method="post" action="/admin/post/edit/update" id="formupdate" enctype="multipart/form-data">
+                            <p id=""> ID bài vi</p>
+                            <p id="idpost"></p> 
+                            <div class="form-group">
+                                <label for="title">Tiêu đề bài viết</label>
+                                <input type="text" class="form-control" name="title" id="title" aria-describedby="emailHelp" placeholder="Nhập têu đề bài viết">
+                            
+                            </div>
+                            <b style="margin-botton:3px">Ảnh tiêu đề</b>
+                            {{!-- <div class="file-input">
+                                <input type="file" name="file-input" id="file-input"  class="file-input__input" />
+                                <label class="file-input__label" for="file-input">
+                                    <svg  aria-hidden="true"  focusable="false"  data-prefix="fas" data-icon="upload"  class="svg-inline--fa fa-upload fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                    >
+                                    <path fill="currentColor"  d="M296 384h-80c-13.3 0-24-10.7-24-24V192h-87.7c-17.8 0-26.7-21.5-14.1-34.1L242.3 5.7c7.5-7.5 19.8-7.5 27.3 0l152.2 152.2c12.6 12.6 3.7 34.1-14.1 34.1H320v168c0 13.3-10.7 24-24 24zm216-8v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h136v8c0 30.9 25.1 56 56 56h80c30.9 0 56-25.1 56-56v-8h136c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"></path>
+                                    </svg> <span>Upload file</span></label>
+                                </div> --}}
+                            <div style="margin-top:10px;margin-bottom:10px">
+                                <div class="select">
+                                <label for="tag">Tag</label>
+                              
+                               <select class="form-select" name="tag" id="tag" aria-label="Default select example">
+                                    <option selected>Hãy chọn tag </option>
+                                    <option value="Thông báo">Thông báo</option>
+                                    <option value="Tin hoạt động">Tin hoạt động</option>
+                                    <option value="Tin đào tạo">Tin đào tạo</option>
+                                    <option value="Tốt nghiệp">Tốt nghiệp</option>
+                                    <option value="Bản tin OTSC">Bản tin OTSC</option>
+                                 </select>
+                                </div>
+                                
+                            </div>
+                            <div>
+                                <label for="description">Mô tả</label>
+                                <textarea class="form-control" name="description" id="description" rows="3"></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="noiDung">Nội dung</label>
+                                <textarea class="form-control" name="noiDung" id="noiDung" rows="6"></textarea>
+                            </div>
+                             
+
+                           </form> 
+                            </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" id="btn_update" class="btn btn-success">Sửa</button>
+                    </div>
+                         </div>
+                </div>
+                 </div>
+
+                {{!-- MODAL --}}
+            <form method="POST" id="form_delete_sp">
+            </form>
+           <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Xóa</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                    Bạn có đồng ý xóa không  ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" id="btnDelete" class="btn btn-danger">Xóa</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Nguyễn Hữu Thắng - Email : huuthang.nguyen.986@gmail.com </span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="/admin">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- Bootstrap core JavaScript-->
+    <script src="/admin/vendor/jquery/jquery.min.js"></script>
+    <script src="/admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="/admin/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="/admin//sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="/admin/vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="/admin/js/demo/chart-area-demo.js"></script>
+    <script src="/admin/js/demo/chart-pie-demo.js"></script>
+   <script src="/js/ckeditor/ckeditor.js"></script>
+    <script>
+CKEDITOR.plugins.addExternal('uploadcare', '/js/uploadcare_3.0.0/plugin.js')
+
+        CKEDITOR.replace('noiDung',{
+             extraPlugins: 'uploadcare',
+            filebrowserBrowseUrl:'/upload',
+         uploadcare: {
+                publicKey: '883f2fc46df5d710371f', // set your public API key here
+                multiple: true, // allow multi-file uploads
+                crop: '1:1,4:3', // set crop options when handling /images
+                /* feel free to add more “object key” options here */
+            },
+        })
+
+
+
+       
+</script>
+
+
+<script>
+    $('.btn-test').each(function () {
+         $(this).on('click',function () {
+             var id = $(this).data('id')
+        
+              $.ajax({
+                    type:'POST',
+                    url:'/admin/post/edit',
+                    contentType:"application/json",
+                    data: JSON.stringify({id: id}),
+                    success: function (res) {
+                         $('.btn-edit').each(function (){
+                             var id2= $(this).data("id")
+                                if(id==id2){
+                                        this.click();
+                                      
+                                         var postid = res.postsID
+                                        var post= postid[0]
+                                         var modal = $("#showproductModel")
+                                         modal.find('#idpost').html(post._id)
+                                         modal.find('#title').val(post.title)
+
+                                         modal.find('#tag').val(post.tag)
+                                         modal.find('#description').val(post.description)
+                                         CKEDITOR.instances['noiDung'].setData(post.noiDung)
+
+
+                                      
+                                }
+                         })
+                    }
+            })
+         })
+    })
+
+
+
+        
+         var productID;
+        $('#exampleModal').on('show.bs.modal', function (event) {
+           
+                var button = $(event.relatedTarget) // Button that triggered the modal
+                 productID = button.data('id') 
+         })
+         var btnDelete = document.getElementById('btnDelete');
+                 btnDelete.onclick = ()=>{
+                var formdelete= document.getElementById('form_delete_sp')
+                
+                 console.log(productID)
+                  formdelete.action ='/admin/post/delete/'+productID 
+                    formdelete.submit()
+        }    
+          
+</script>
+<script>
+     $('#btn_update').on('click',function(){
+             var id = $('#idpost').text();
+           
+              var title = $('#title').val()
+              var description= $('#description').val()
+              var tag = $('#tag').val()
+               var noiDung = CKEDITOR.instances['noiDung'].getData()
+              $.ajax({
+                    type:'POST',
+                    url:'/admin/post/edit/update',
+                    contentType:"application/json",
+                    data: JSON.stringify({id:id,title: title, description:description,tag:tag,noiDung:noiDung}),
+                    success : function(res){
+                        alert("Update Thành công");
+                        location.reload();
+                    },error: function(){
+                        alert("Update Thất bại");
+                    }
+                })
+        })
+      
+</script>
+</body>
+
+</html>

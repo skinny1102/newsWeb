@@ -1,0 +1,58 @@
+ /* Thiết kẻ thẻ select */
+ select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: gainsboro;
+    background-image: none;
+  }
+ .select {
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: #fff;
+    overflow: hidden;
+    border-radius: .25em;
+  }
+  select {
+    flex: 1;
+    padding: 0 .5em;
+    color: b;
+    cursor: pointer;
+  }
+  /* thiết kế dấu mũi tên */
+  .select::after {
+    content: '25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background:gainsboro;
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+    color: black;
+  }
+  /* Hiệu ứng hover */
+  .select:hover::after {
+    color: black;
+  }
+  
+
+
+/* Important part */
+.modal-dialog{
+    overflow-y: initial !important
+}
+.modal-body{
+    height: 80vh;
+    overflow-y: auto;
+}

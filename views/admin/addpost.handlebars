@@ -1,0 +1,82 @@
+{{#section 'css'}}
+<link rel="stylesheet" href="/css/addpost.css">
+{{/section}}
+
+
+
+{{#section 'js'}}
+    <script src="/js/ckeditor/ckeditor.js"></script>
+    <script>
+CKEDITOR.plugins.addExternal('uploadcare', '/js/uploadcare_3.0.0/plugin.js')
+
+        CKEDITOR.replace('noiDung',{
+             extraPlugins: 'uploadcare',
+            filebrowserBrowseUrl:'/upload',
+         uploadcare: {
+                publicKey: '883f2fc46df5d710371f', // set your public API key here
+                multiple: true, // allow multi-file uploads
+                crop: '1:1,4:3', // set crop options when handling /images
+                /* feel free to add more “object key” options here */
+            },
+        })
+    
+
+$(".custom-file-input").on("change", function() {
+  var fileName = $(this).val().split("\\").pop();
+  $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+});
+
+
+
+
+</script>
+{{/section}}
+
+<section id="contentSection">
+        <h2 style="text-align: center;"> Thêm bài viết mới </h2>
+        <div class="container ">
+<form action="add" method="post" enctype="multipart/form-data">
+               
+                            <div class="form-group">
+                                <label for="title">Tiêu đề bài viết</label>
+                                <input type="text" class="form-control" name="title" id="title" aria-describedby="emailHelp" placeholder="Nhập têu đề bài viết">
+                            
+                            </div>
+                            <b style="margin-botton:3px">Ảnh tiêu đề</b>
+                            <div class="file-input">
+                                <input type="file" name="file-input" id="file-input"  class="file-input__input" />
+                                <label class="file-input__label" for="file-input">
+                                    <svg  aria-hidden="true"  focusable="false"  data-prefix="fas" data-icon="upload"  class="svg-inline--fa fa-upload fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                    >
+                                    <path fill="currentColor"  d="M296 384h-80c-13.3 0-24-10.7-24-24V192h-87.7c-17.8 0-26.7-21.5-14.1-34.1L242.3 5.7c7.5-7.5 19.8-7.5 27.3 0l152.2 152.2c12.6 12.6 3.7 34.1-14.1 34.1H320v168c0 13.3-10.7 24-24 24zm216-8v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h136v8c0 30.9 25.1 56 56 56h80c30.9 0 56-25.1 56-56v-8h136c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"></path>
+                                    </svg> <span>Upload file</span></label>
+                                </div>
+                            <div style="margin-top:10px;margin-bottom:10px">
+                                <label for="tag">Tag</label>
+                              
+                               <select class="form-select" name="tag" id="tag" aria-label="Default select example">
+                                    <option selected>Hãy chọn tag/option>
+                                    <option value="Thông báo">Thông báo</option>
+                                    <option value="Tin hoạt động">Tin hoạt động</option>
+                                    <option value="Tin đào tạo">Tin đào tạo</option>
+                                    <option value="Tốt nghiệp">Tốt nghiệp</option>
+                                    <option value="Bản tin OTSC">Bản tin OTSC</option>
+                                 </select>
+                            </div>
+                            <div>
+                                <label for="description">Mô tả</label>
+                                <textarea class="form-control" name="description" id="description" rows="3"></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="noiDung">Nội dung</label>
+                                <textarea class="form-control" name="noiDung" id="noiDung" rows="6"></textarea>
+                            </div>
+                             
+                            <button type="submit" id="btn-submit" class="btn btn-primary" style="margin-top: 10px;">Đăng bài viết</button>
+</form>
+        </div>
+        
+
+</section>
+
